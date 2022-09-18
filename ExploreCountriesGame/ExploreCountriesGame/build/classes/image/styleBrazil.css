@@ -1,0 +1,13 @@
+/*.root{
+    -fx-background-color: #cccccc;
+    
+}*/
+
+.my-pane{
+-fx-background-image: url('brazilFlagOpacity.png'); 
+/*-fx-opacity: 0.5;*/
+/*-fx-background-color: #cccccc;*/
+-fx-border-color: #464646; 
+-fx-effect: innershadow( two-pass-box , rgba(0,0,0,0.8) , 15, 0.0 , 0 , 4 );
+}
+/*getStyleClass().add("my-pane");*/

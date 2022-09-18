@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.WinGamesController">
+<children>     
+    <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/back.gif" />
+         </image>
+      </ImageView>
+       <ImageView fitHeight="80.0" fitWidth="129.0" layoutX="359.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="189.0" layoutX="543.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NamePanel.png" />
+         </image>
+      </ImageView>
+       <Label layoutX="565.0" layoutY="25.0" prefHeight="30.0" prefWidth="71.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_name" layoutX="638.0" layoutY="25.0" prefHeight="30.0" prefWidth="91.0" text="Gamer's" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="140.0" layoutX="179.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/scorePanel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="140.0" layoutX="45.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/levelPanel.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" layoutX="253.0" layoutY="29.0" prefHeight="23.0" prefWidth="28.0" text="40" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelLabel" layoutX="121.0" layoutY="28.0" prefHeight="23.0" prefWidth="20.0" text="3" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </Label>
+       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="527.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/student.png" />
+         </image>
+      </ImageView>
+          <ImageView fx:id="close" fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="15.0" onMouseClicked="#exitApp" onMouseEntered="#exitAppEnterMouse" onMouseExited="#exitAppExitMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="203.0" layoutX="316.0" layoutY="195.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/boy%20(20).gif" />
+         </image>
+      </ImageView>
+<ImageView fitHeight="133.0" fitWidth="514.0" layoutX="173.0" layoutY="328.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/greatJob.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backButton" fitHeight="89.0" fitWidth="87.0" layoutX="698.0" layoutY="401.0" onMouseClicked="#backtoMap" onMouseEntered="#backtoMapEnterMouse" onMouseExited="#backtoMapExiteMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star3" fitHeight="83.0" fitWidth="95.0" layoutX="260.0" layoutY="150.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/star2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star2" fitHeight="83.0" fitWidth="95.0" layoutX="492.0" layoutY="150.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/star2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star1" fitHeight="141.0" fitWidth="153.0" layoutX="347.0" layoutY="70.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/star1.png" />
+         </image>
+      </ImageView>
+      </children>
+</AnchorPane>

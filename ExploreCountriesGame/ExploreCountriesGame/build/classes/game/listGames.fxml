@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.ListGamesController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/back.gif" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="80.0" fitWidth="129.0" layoutX="359.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="189.0" layoutX="543.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/NamePanel.png" />
+         </image>
+      </ImageView>
+      
+       <Label layoutX="565.0" layoutY="25.0" prefHeight="30.0" prefWidth="71.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_name" layoutX="638.0" layoutY="25.0" prefHeight="30.0" prefWidth="91.0" text="Gamer's" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="140.0" layoutX="179.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/scorePanel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="140.0" layoutX="45.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/levelPanel.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" layoutX="253.0" layoutY="29.0" prefHeight="23.0" prefWidth="28.0" text="40" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelLabel" layoutX="121.0" layoutY="28.0" prefHeight="23.0" prefWidth="20.0" text="3" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </Label>
+       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="527.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/student.png" />
+         </image>
+      </ImageView>
+          <ImageView fx:id="close" fitHeight="40.0" fitWidth="40.0" layoutX="750.0" layoutY="15.0" onMouseClicked="#exitApp" onMouseEntered="#exitAppEnterMouse" onMouseExited="#exitAppExitMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close_1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="37.0" layoutY="122.0" prefHeight="220.0" prefWidth="738.0">
+         <children>
+            <Rectangle fx:id="puzzleRect" arcHeight="15.0" arcWidth="5.0" fill="#f9ffbc" height="175.0" layoutX="5.0" layoutY="23.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+            <Rectangle fx:id="spellingRect" arcHeight="15.0" arcWidth="5.0" fill="#c5c5c3" height="175.0" layoutX="189.0" layoutY="23.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+            <Rectangle fx:id="mazeRect" arcHeight="15.0" arcWidth="5.0" fill="#c5c5c3" height="175.0" layoutX="380.0" layoutY="23.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+            <Rectangle fx:id="memCardsRect" arcHeight="15.0" arcWidth="5.0" fill="#c5c5c3" height="175.0" layoutX="574.0" layoutY="22.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+            <ImageView fx:id="mazPic" fitHeight="125.0" fitWidth="129.0" layoutX="385.0" layoutY="39.0" onMouseClicked="#startMaze" onMouseEntered="#startMazeEnterMouse" onMouseExited="#startMazeExitedMouse" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/mazePic.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="puzzlePic" fitHeight="125.0" fitWidth="116.0" layoutX="17.0" layoutY="41.0" onMouseClicked="#startPuzzle" onMouseEntered="#startPuzzleEnterMouse" onMouseExited="#startPuzzleExitedMouse" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/puzzlePic.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="memCradsPic" fitHeight="125.0" fitWidth="129.0" layoutX="580.0" layoutY="43.0" onMouseClicked="#startMemCards" onMouseEntered="#startMemCardsEnterMouse" onMouseExited="#startMemCardsExitedMouse" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/cardsMem.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="spellingPic" fitHeight="145.0" fitWidth="137.0" layoutX="189.0" layoutY="32.0" onMouseClicked="#startSpelling" onMouseEntered="#startSpellingEnterMouse" onMouseExited="#startSpellingExitedMouse" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/spellingBloks.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="spellingButton" fitHeight="50.0" fitWidth="132.0" layoutX="193.0" layoutY="172.0" onMouseClicked="#startSpellingButton" onMouseEntered="#startSpellingEnterMouseButton" onMouseExited="#startSpellingExitedMouseButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/spellingButtonDisable.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mazeButton" fitHeight="50.0" fitWidth="132.0" layoutX="389.0" layoutY="171.0" onMouseClicked="#startMazeButton" onMouseEntered="#startMazeEnterMouseButton" onMouseExited="#startMazeExitedMouseButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/mazeButtonDisable.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="memoryButton" fitHeight="50.0" fitWidth="137.0" layoutX="580.0" layoutY="176.0" onMouseClicked="#startMemCardsButton" onMouseEntered="#startMemCardsEnterMouseButton" onMouseExited="#startMemCardsExitedMouseButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/memoryButton2Disable.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="puzzleButton" fitHeight="95.0" fitWidth="124.0" layoutX="13.0" layoutY="163.0" onMouseClicked="#startPuzzleButton" onMouseEntered="#startPuzzleEnterMouseButton" onMouseExited="#startPuzzleExitedMouseButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/puzzleButton2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="backButton" fitHeight="89.0" fitWidth="87.0" layoutX="689.0" layoutY="388.0" onMouseClicked="#back" onMouseEntered="#backEnterMouse" onMouseExited="#backExiteMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
